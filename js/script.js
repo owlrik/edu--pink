@@ -142,7 +142,7 @@ function mapHandler() {
       }
     };
     var map = new google.maps.Map(mapElement, mapOptions);
-    var markerImage = '../img/icon-map-marker.svg';
+    var markerImage = 'img/icon-map-marker.svg';
     var marker = new google.maps.Marker({
       position: pinkOfficeLatlng,
       map: map,
