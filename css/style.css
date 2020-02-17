@@ -389,6 +389,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
@@ -1243,8 +1244,7 @@ input[type="radio"].visually-hidden {
   @media (min-width: 660px) {
     .reviews__item {
       display: flex;
-      flex-direction: column;
-      align-items: center; } }
+      flex-direction: column; } }
   @media (min-width: 960px) {
     .reviews__item {
       padding-right: 100px;
@@ -1510,16 +1510,10 @@ input[type="radio"].visually-hidden {
         display: table-cell;
         visibility: hidden;
         opacity: 0; } }
-
-.prices-table__cell svg {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%); }
-  @media (min-width: 660px) {
-    .prices-table__cell svg {
-      right: 50%;
-      transform: translate(50%, -50%); } }
+  .prices-table__cell--yes {
+    background: url("../img/icon-yes.svg") no-repeat center/31px 21px; }
+  .prices-table__cell--no {
+    background: url("../img/icon-no.svg") no-repeat center/27px 26px; }
 
 .prices-table__title {
   margin: 0 0 2px;
@@ -2005,6 +1999,7 @@ input[type="radio"].visually-hidden {
       min-height: 155px;
       padding: 24px 27px 22px; } }
   .post__inner--panorama {
+    width: 100%;
     max-width: 280px;
     margin: 0 auto;
     background-color: #f2f2f2; }
@@ -2655,6 +2650,7 @@ input[type="radio"].visually-hidden {
       transform: translate(-50%, -50%); } }
 
 .form__group-title {
+  margin: 0 auto;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
