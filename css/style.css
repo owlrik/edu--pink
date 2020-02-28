@@ -1511,9 +1511,12 @@ input[type="radio"].visually-hidden {
         visibility: hidden;
         opacity: 0; } }
   .prices-table__cell--yes {
-    background: url("../img/icon-yes.svg") no-repeat center/31px 21px; }
+    background: url("../img/icon-yes.svg") no-repeat right 20px center/31px 21px; }
   .prices-table__cell--no {
-    background: url("../img/icon-no.svg") no-repeat center/27px 26px; }
+    background: url("../img/icon-no.svg") no-repeat right 20px center/27px 26px; }
+  @media (min-width: 660px) {
+    .prices-table__cell--yes, .prices-table__cell--no {
+      background-position: center; } }
 
 .prices-table__title {
   margin: 0 0 2px;
